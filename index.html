@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather App Project JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    
+</head>
+
+<body>
+    <header id="HOME">
+
+        <nav>
+            <div class="nav-links" id="navLnks">
+                
+                <ul>
+                    <li><a href="#HOME">HOME</a></li>
+                    <li><a href="#current-weather">CURRENT</a></li>
+                    <li><a href="#weather-forecast">FORECAST</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#weather-map">MAP</a></li>
+                    <li><a href="#footer">SUBSCRIBE</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+
+        <h1 class="title">Weather Spark 🌍</h1>
+        <video autoplay loop muted class="back-vedio" id="back-vedio">
+            <source src="Vedio.mp4" type="video/mp4">
+        </video>
+
+        <section id="current-weather">
+            <h2> Current Weather <a href="#HOME"><button class="button" style="vertical-align:middle"><span>Back </span> </button></a></h2>
+            <div class="container">
+
+
+                <div class="weather-input">
+                    <h3>Enter a City Name</h3>
+                    <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+                    <button class="search-btn">Search</button>
+                    <div class="separator"></div>
+                    <button class="location-btn">Use Current Location</button>
+                </div>
+                <div class="weather-data">
+                    <div class="current-weather">
+                        <div class="details">
+                            <h2>_______ ( ______ )</h2>
+                            <h6>Temperature: __°C</h6>
+                            <h6>Wind: __ M/S</h6>
+                            <h6>Humidity: __%</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+    </header>
+    <br>
+    </section>
+    <section id="weather-forecast">
+        <h2>Weather Forecast <a href="#HOME"><button class="button" style="vertical-align:middle"><span>Back </span> </button></a></h2>
+        <div class="days-forecast">
+            
+            <ul class="weather-cards">
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <br><br>
+    
+    <section id="weather-map" >
+        <h2>Map Viwe <a href="#HOME"><button class="button" style="vertical-align:middle"><span>Back </span> </button></a></h2>
+    
+      <div class="div-map">
+
+        <center>
+            
+
+          <div id="map" style="width: 70%; height: 400px;">
+            <i class="fa-solid fa-map-location-dot" ></i>
+            <h3>Please Enter Your location first</h3></div>
+           
+        </center>
+      </div>
+    
+    </section>
+    <br><br>
+    <section id="news">
+        <h2>Top Stories <a href="#HOME"><button class="button" style="vertical-align:middle"><span>Back </span> </button></a></h2>
+        <div style="width: 70%; height: 400px;"></div>
+        
+    </section>
+    <br><br>
+    <footer id="footer">
+       
+        <div style="width: 100%; height: 100%;">
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="footerNav">
+                   
+                    <ul><li><a href="#HOME">Home</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#current-weather">Current</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                        <li><a href="#weather-forecast">Forecast</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2023; Designed by <span class="designer">FastTrack</span></p>
+            </div></div>
+    </footer>
+
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
